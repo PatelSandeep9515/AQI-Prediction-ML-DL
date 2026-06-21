@@ -5,6 +5,10 @@ Air Quality Prediction using Machine Learning (XGBoost, Random Forest) and Deep 
 
 This project investigates Air Quality Index (AQI) prediction using Machine Learning and Deep Learning techniques on the UCI Air Quality Dataset.
 
+## Project Objective
+
+The objective of this project is to develop an accurate and interpretable air quality prediction framework using machine learning and deep learning techniques. The study compares XGBoost, Random Forest, and LSTM models and evaluates their performance using standard regression metrics.
+
 The following models were implemented and compared:
 
 - XGBoost
@@ -15,6 +19,8 @@ Explainable Artificial Intelligence (XAI) was incorporated using SHAP to improve
 
 ## Dataset
 
+Dataset Link:
+https://archive.ics.uci.edu/dataset/360/air+quality
 - Source: UCI Machine Learning Repository
 - Target Variable: CO(GT)
 
@@ -46,7 +52,12 @@ Explainable Artificial Intelligence (XAI) was incorporated using SHAP to improve
 | Random Forest | 0.497 | 0.334 | 0.871 |
 | LSTM | 0.586 | 0.393 | 0.821 |
 
-XGBoost achieved the best overall performance.
+### Key Findings
+
+- XGBoost achieved the highest predictive accuracy with an R² score of 0.888.
+- Random Forest delivered competitive performance with strong generalisation capability.
+- LSTM successfully captured temporal patterns but produced comparatively higher prediction errors.
+- SHAP analysis identified lag-based and pollutant concentration features as the most influential predictors.
 
 
 ## Explainability
